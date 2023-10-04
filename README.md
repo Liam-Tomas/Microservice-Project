@@ -6,15 +6,11 @@
 
 This document outlines the communication contract between the client application and the Windows 10/11 Optimization Program microservice. The microservice is responsible for generating a list of installed programs and uninstalling specified programs on the client's machine.
 
-Install Programs
+Install Programs:
 
-Request:
+Request: ‘GET /installed_programs’
 
-‘GET /installed_programs’
-
-Parameters:
-
-None
+Parameters: None
 
 Example call:
 
@@ -30,15 +26,11 @@ Response:
   ]
 }
 
-Uninstall Programs
+Uninstall Programs:
 
-Request:
+Request: ‘POST /uninstall_programs’
 
-‘POST /uninstall_programs’
-
-Parameters:
-
-programs_to_uninstall: A list of program names to uninstall.
+Parameters: programs_to_uninstall: A list of program names to uninstall.
 
 Example call:
 
@@ -53,7 +45,7 @@ Response:
   }
 }
 
-UML Sequence Diagram
+UML Sequence Diagram:
 
 Here is a UML sequence diagram that shows how the client application communicates with the microservice:
 
