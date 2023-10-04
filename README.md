@@ -2,11 +2,9 @@
 
 ## Communication Contract
 
-### Overview:
+Overview: This document outlines the communication contract between the client application and the Windows 10/11 Optimization Program microservice. The microservice is responsible for generating a list of installed programs and uninstalling specified programs on the client's machine.
 
-This document outlines the communication contract between the client application and the Windows 10/11 Optimization Program microservice. The microservice is responsible for generating a list of installed programs and uninstalling specified programs on the client's machine.
-
-Install Programs:
+### Install Programs:
 
 Request: ‘GET /installed_programs’
 
@@ -26,7 +24,7 @@ Response:
   ]
 }
 
-Uninstall Programs:
+### Uninstall Programs:
 
 Request: ‘POST /uninstall_programs’
 
@@ -45,7 +43,7 @@ Response:
   }
 }
 
-UML Sequence Diagram:
+### UML Sequence Diagram:
 
 Here is a UML sequence diagram that shows how the client application communicates with the microservice:
 
