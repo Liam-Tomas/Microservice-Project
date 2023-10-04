@@ -1,6 +1,6 @@
 # READ ME
 
-Communication Contract
+## Communication Contract
 
 Overview:
 
